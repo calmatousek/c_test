@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#666">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/moneyView"
+            android:textSize="25dp"
+            android:text="0" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/money_bag" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".99"></LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".005"
+        android:background="#666">
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="This is a basic sentance that should marqee properly across the screen over and over again like a stock ticker."
+            android:id="@+id/marqueeView"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:focusable="false"
+            android:scrollHorizontally="true"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".05">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="103dp"
+            android:layout_height="75dp"
+            android:text="Station"
+            android:id="@+id/stationButton" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="103dp"
+            android:layout_height="75dp"
+            android:text="Crew"
+            android:id="@+id/crewButton" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="103dp"
+            android:layout_height="75dp"
+            android:text="Research"
+            android:id="@+id/researchButton" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="103dp"
+            android:layout_height="75dp"
+            android:text="Missions"
+            android:id="@+id/missonButton" />
+    </LinearLayout>
+</LinearLayout>
