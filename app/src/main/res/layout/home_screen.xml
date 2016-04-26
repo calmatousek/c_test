@@ -8,7 +8,8 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#666">
+        android:background="#666"
+        android:weightSum="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -16,13 +17,38 @@
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:id="@+id/moneyView"
             android:textSize="25dp"
-            android:text="0" />
+            android:text="0"
+            android:paddingLeft="5dp" />
 
         <ImageView
             android:layout_width="29dp"
             android:layout_height="29dp"
-            android:id="@+id/imageView"
-            android:src="@drawable/money_bag" />
+            android:id="@+id/moneyImage"
+            android:src="@drawable/money_bag"
+            android:paddingLeft="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/moralityView"
+            android:textSize="25dp"
+            android:text="0"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:id="@+id/moralityImage"
+            android:src="@android:drawable/btn_star_big_on"
+            android:paddingLeft="1dp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/progressBar2"
+            android:layout_gravity="right" />
 
     </LinearLayout>
 
