@@ -4,55 +4,73 @@
     api-level="23"
     density="420dpi"
     format="7"
-    timestamp="1032344413505204"
-    verifier="R_CLASS_CHANGE" >
+    timestamp="530753624827781" >
 
     <task
         name="javac"
-        duration="654" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="341" />
+        duration="0" />
     <task
         name="verifier"
-        duration="54" />
+        duration="0" />
 
-    <artifact
-        location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
-
-    <build timestamp="1032105822483699" >
+    <build timestamp="528598497270773" >
         <artifact
-            location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\outputs\apk\app-debug.apk"
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="1032344413505204"
-        verifier="R_CLASS_CHANGE" >
+        timestamp="530033920715980"
+        verifier="FIELD_ADDED" >
         <artifact
-            location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\Caleb\AndroidStudioProjects\TheStation\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
             type="DEX" />
     </build>
+    <build
+        timestamp="530071412916508"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\intermediates\builds\debug\530071412916508\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="530195828359686"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\intermediates\builds\debug\530195828359686\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="530279279253832" >
+        <artifact
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+    </build>
+    <build
+        timestamp="530450447568721"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\intermediates\builds\debug\530450447568721\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="530490635291880"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\intermediates\builds\debug\530490635291880\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build
+        timestamp="530520500784867"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\CMATO\AndroidStudioProjects\TheStation\app\build\intermediates\builds\debug\530520500784867\classes.dex"
+            type="RELOAD_DEX" />
+    </build>
+    <build timestamp="530753624827781" />
 
 </instant-run>

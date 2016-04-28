@@ -1,6 +1,7 @@
 package com.example.android.thestation;
 
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,9 @@ import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ProgressBar;
+
+import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -58,15 +62,59 @@ public class MainActivity extends AppCompatActivity {
             });
         }
 
+        int i = 0;
+        final ProgressBar mProgressBar = (ProgressBar) findViewById(R.id.progressBar);
+        mProgressBar.setProgress(i);
+        final TextView timerView = (TextView)findViewById(R.id.progressTime);
+
+        final CountDownTimer timer = new CountDownTimer(5000, 1) {
+            int i = 0;
+            public void onTick(long millisUntilFinished) {
+                timerView.setText("" + millisUntilFinished / 100);
+                int timeUpdate = Integer.parseInt(timerView.getText().toString());
+                i++;
+                mProgressBar.setProgress(i);
+            }
+
+            public void onFinish() {
+                timerView.setText("");
+
+                final Random rand = new Random();
+                int diceRoll = rand.nextInt(4) + 1; // uniformly distributed int from 1 to 4
+                Toast.makeText(MainActivity.this, "Rolled a " + diceRoll + "!",	Toast.LENGTH_SHORT).show();
+
+                if (diceRoll > 2) {
+
+
+                    TextView moneyView;
+                    moneyView = (TextView) findViewById(R.id.moneyView);
+                    int monies = Integer.parseInt(moneyView.getText().toString());
+                    monies++;
+                    moneyView.setText("" + monies);
+                    Toast.makeText(MainActivity.this, "Success! " + "1 Monies Earned!",	Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(MainActivity.this, "Failure! No Monies For You!",Toast.LENGTH_SHORT).show();
+                }
+                i = 0;
+                mProgressBar.setProgress(i);
+
+                //timerProcessing = false;
+            }
+        };
+
         //Mission Button
         Button missionButton = (Button) findViewById(R.id.missonButton);
         if (missionButton != null) {
             missionButton.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View view) {
-                    Toast.makeText(MainActivity.this, "Mission Placeholder",	Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Mission Start",	Toast.LENGTH_SHORT).show();
+                    timer.start();
+                    //timerView = (TextView) findViewById(R.id.progressTime);
                 }
             });
         }
+
+
 
         //Marquee
         TextView marqueeView;
@@ -74,8 +122,6 @@ public class MainActivity extends AppCompatActivity {
         marqueeView.setSelected(true);
 
     }
-
-
 
 
 
